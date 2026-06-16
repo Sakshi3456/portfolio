@@ -7,7 +7,7 @@ export const personalInfo = {
   location: "Pune",
   linkedin: "https://linkedin.com/in/sakshinagre",
   github: "https://github.com/Sakshi3456",
-  resume: "#",
+  resume: "https://drive.google.com/file/d/1krInNZ8pT4xjFyGdsR_gE5MY2satC3Fa/view?usp=sharing",
 }
 
 export const projects = [
