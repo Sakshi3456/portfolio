@@ -103,7 +103,7 @@ const Projects = () => {
                 <div className="p-8 pl-10">
 
                   {/* Header row */}
-                  <div className="flex items-start justify-between gap-4 mb-5">
+                  <div className="flex flex-col sm:flex-row items-start sm:justify-between gap-3 mb-5">
                     <div className="flex-1">
                       {/* Project number + title row */}
                       <div className="flex items-center gap-3 mb-1">
@@ -123,7 +123,7 @@ const Projects = () => {
                     </div>
 
                     {/* Links */}
-                    <div className="flex gap-3 flex-shrink-0">
+                    <div className="flex gap-3 flex-shrink-0 mt-1">
                       {project.github && (
                         <motion.a
                           href={project.github}

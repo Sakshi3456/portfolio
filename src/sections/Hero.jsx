@@ -75,7 +75,7 @@ const Hero = () => {
             {nameLetters.map((letter, i) => (
               <motion.span
                 key={i}
-                className="text-5xl md:text-7xl font-bold text-white"
+                className="text-4xl md:text-7xl font-bold text-white"
                 style={{ fontFamily: 'Poppins, sans-serif', display: letter === " " ? "inline-block" : "inline-block", width: letter === " " ? "0.4em" : "auto" }}
                 initial={{ opacity: 0, y: 60, rotateX: -90 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
@@ -114,7 +114,9 @@ const Hero = () => {
 
           {/* Buttons */}
           <motion.div
-            className="flex flex-wrap gap-4 mb-8"
+            className="flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto"
+            className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 w-full sm:w-auto text-center"
+            className="px-6 py-3 border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 font-semibold rounded-lg transition-all duration-300 w-full sm:w-auto text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.1, type: "spring", stiffness: 100 }}
