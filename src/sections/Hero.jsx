@@ -39,6 +39,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+      
 
       {/* Background glows */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -76,6 +77,7 @@ const Hero = () => {
               <motion.span
                 key={i}
                 className="text-4xl md:text-7xl font-bold text-white"
+                className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
                 style={{ fontFamily: 'Poppins, sans-serif', display: letter === " " ? "inline-block" : "inline-block", width: letter === " " ? "0.4em" : "auto" }}
                 initial={{ opacity: 0, y: 60, rotateX: -90 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
